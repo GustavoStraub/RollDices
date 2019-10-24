@@ -1,3 +1,3 @@
 # RollDices
 
-a simple project used to study more of JavaScripts
+a simple project to study JavaScript
