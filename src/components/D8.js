@@ -1,45 +1,45 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 
-export default function D20() {
+export default function D8() {
 
   //DEFININDO VALOR INICIAL DO SWITCH
   const [Quantidade, setQuantidade] = useState(0)
 
   //DEFININDO VALOR INICIAL DOS DADOS
-  const [ResultadoD20, setResultadoD20] = useState(0)
+  const [ResultadoD8, setResultadoD8] = useState(0)
 
-  const [Resultado2D20, setResultado2D20] = useState(0)
-  const [Resultado3D20, setResultado3D20] = useState(0)
-  const [Resultado4D20, setResultado4D20] = useState(0)
+  const [Resultado2D8, setResultado2D8] = useState(0)
+  const [Resultado3D8, setResultado3D8] = useState(0)
+  const [Resultado4D8, setResultado4D8] = useState(0)
 
   //AQUI ARMAZENAREMOS O RESULTADO DE TODOS OS DADOS ROLADOS
   const [ResultadoTotal, setResultadoTotal] = useState(0)
 
   //ROLANDO UM DADO, SETA O VALOR INICIAL PARA UM NUMERO ALEATORIO ENTRE 0 E 19, POR ISSO ACRESCENTAMOS +1
-  function Rolard20() {
-    setResultadoD20(Math.floor(Math.random() * 20 + 1));
+  function Rolard8() {
+    setResultadoD8(Math.floor(Math.random() * 8 + 1));
   }
 
   //ROLANDO 2 DADOS
-  function Rolar2d20() {
-    setResultadoD20(Math.floor(Math.random() * 20 + 1));
-    setResultado2D20(Math.floor(Math.random() * 20 + 1));
+  function Rolar2d8() {
+    setResultadoD8(Math.floor(Math.random() * 8 + 1));
+    setResultado2D8(Math.floor(Math.random() * 8 + 1));
   }
 
   //ROLANDO 3 DADOS
-  function Rolar3d20() {
-    setResultadoD20(Math.floor(Math.random() * 20 + 1));
-    setResultado2D20(Math.floor(Math.random() * 20 + 1));
-    setResultado3D20(Math.floor(Math.random() * 20 + 1));
+  function Rolar3d8() {
+    setResultadoD8(Math.floor(Math.random() * 8 + 1));
+    setResultado2D8(Math.floor(Math.random() * 8 + 1));
+    setResultado3D8(Math.floor(Math.random() * 8 + 1));
   }
 
   //ROLANDO 4 DADOS  
-  function Rolar4d20() {
-    setResultadoD20(Math.floor(Math.random() * 20 + 1));
-    setResultado2D20(Math.floor(Math.random() * 20 + 1));
-    setResultado3D20(Math.floor(Math.random() * 20 + 1));
-    setResultado4D20(Math.floor(Math.random() * 20 + 1));
+  function Rolar4d8() {
+    setResultadoD8(Math.floor(Math.random() * 8 + 1));
+    setResultado2D8(Math.floor(Math.random() * 8 + 1));
+    setResultado3D8(Math.floor(Math.random() * 8 + 1));
+    setResultado4D8(Math.floor(Math.random() * 8 + 1));
 
   }
 
@@ -131,10 +131,10 @@ margin-left: 1vw;
           <SomarDiminuir onClick={() => Quantidade=== 0 ? setQuantidade(Quantidade + 0) : setQuantidade(Quantidade - 1)}><p>-</p></SomarDiminuir>
         </ADD>
         <Numero>{Quantidade +1}</Numero>
-        <Butaum onClick={Rolard20}>
-          <Name>Rolar<br/> d20</Name>
+        <Butaum onClick={Rolard8}>
+          <Name>Rolar<br/> d8</Name>
         </Butaum>
-        <Result>Resultado: {ResultadoD20}</Result>
+        <Result>Resultado: {ResultadoD8}</Result>
       </Main>
 
       case 1: return <Main>
@@ -143,12 +143,12 @@ margin-left: 1vw;
           <SomarDiminuir onClick={() => setQuantidade(Quantidade - 1)}><p>-</p></SomarDiminuir>
         </ADD>
         <Numero>{Quantidade+1}</Numero>
-        <Butaum onClick={Rolar2d20}>
-          <Name>Rolar 2d20</Name>
+        <Butaum onClick={Rolar2d8}>
+          <Name>Rolar 2d8</Name>
         </Butaum>
-        <Result>Primeiro: {ResultadoD20}<br />
-          Segundo: {Resultado2D20} <br />
-          Total {ResultadoD20 + Resultado2D20}</Result>
+        <Result>Primeiro: {ResultadoD8}<br />
+          Segundo: {Resultado2D8} <br />
+          Total {ResultadoD8 + Resultado2D8}</Result>
       </Main>
 
       case 2: return <Main>
@@ -157,13 +157,13 @@ margin-left: 1vw;
           <SomarDiminuir onClick={() => setQuantidade(Quantidade - 1)}><p>-</p></SomarDiminuir>
         </ADD>
         <Numero>{Quantidade+1}</Numero>
-        <Butaum onClick={Rolar3d20}>
-          <Name>Rolar 3d20</Name>
+        <Butaum onClick={Rolar3d8}>
+          <Name>Rolar 3d8</Name>
         </Butaum>
-        <Result>Primeiro: {ResultadoD20}<br />
-          Segundo: {Resultado2D20} <br />
-          Terceiro : {Resultado3D20}<br />
-          Total {ResultadoD20 + Resultado2D20 + Resultado3D20}</Result>
+        <Result>Primeiro: {ResultadoD8}<br />
+          Segundo: {Resultado2D8} <br />
+          Terceiro : {Resultado3D8}<br />
+          Total {ResultadoD8 + Resultado2D8 + Resultado3D8}</Result>
       </Main>
 
       case 3: return <Main>
@@ -172,14 +172,14 @@ margin-left: 1vw;
           <SomarDiminuir onClick={() =>  setQuantidade(Quantidade - 1)}><p>-</p></SomarDiminuir>
         </ADD>
         <Numero>{Quantidade+1}</Numero>
-        <Butaum onClick={Rolar4d20}>
-          <Name>Rolar 4d20</Name>
+        <Butaum onClick={Rolar4d8}>
+          <Name>Rolar 4d8</Name>
         </Butaum>
-        <Result>Primeiro: {ResultadoD20}<br />
-          Segundo: {Resultado2D20} <br />
-          Terceiro : {Resultado3D20}<br />
-          Quarto: {Resultado4D20} <br />
-          Total {ResultadoD20 + Resultado2D20 + Resultado3D20 + Resultado4D20}</Result>
+        <Result>Primeiro: {ResultadoD8}<br />
+          Segundo: {Resultado2D8} <br />
+          Terceiro : {Resultado3D8}<br />
+          Quarto: {Resultado4D8} <br />
+          Total {ResultadoD8 + Resultado2D8 + Resultado3D8 + Resultado4D8}</Result>
       </Main>
 
       default: return <Main>
@@ -188,13 +188,14 @@ margin-left: 1vw;
           <SomarDiminuir onClick={() => setQuantidade(Quantidade - 1)}><p>-</p></SomarDiminuir>
         </ADD>
         <Numero>{Quantidade+1}</Numero>
-        <Butaum onClick={Rolard20}>
-          <Name>Rolar<br/> d20</Name>
+        <Butaum onClick={Rolard8}>
+          <Name>Rolar<br/> d8</Name>
         </Butaum>
-        <Result>{ResultadoD20 === 20 ? <p>VINTE NATURAL</p> :ResultadoD20}</Result>
+        <Result>{ResultadoD8}</Result>
       </Main>
     }
   }
+
   return (
     <Wrapper>
       {Dices()}
