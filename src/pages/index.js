@@ -4,6 +4,7 @@ import D20 from '../components/D20'
 import D6 from '../components/D6'
 import D4 from '../components/D4'
 import D8 from '../components/D8'
+import D10 from '../components/D10'
 
 const Main = styled.div`
 height: 100%;
@@ -28,7 +29,9 @@ export default function index() {
         <D8 />
         <D4 />
         </Center>
-
+        <Center>
+          <D10 />
+        </Center>
         <style global jsx>{`
         body {
           margin: 0;
