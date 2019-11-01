@@ -18,7 +18,7 @@ export default function D12() {
 
   //ROLANDO UM DADO, SETA O VALOR INICIAL PARA UM NUMERO ALEATORIO ENTRE 0 E 19, POR ISSO ACRESCENTAMOS +1
   function Rolard12() {
-    setResultadoD6(Math.floor(Math.random() * 12 + 1));
+    setResultadoD12(Math.floor(Math.random() * 12 + 1));
   }
 
   //ROLANDO 2 DADOS
@@ -146,7 +146,7 @@ margin-left: 1vw;
         <Butaum onClick={Rolar2d12}>
           <Name>Rolar 2d12</Name>
         </Butaum>
-        <Result>Primeiro: {ResultadoD6}<br />
+        <Result>Primeiro: {ResultadoD12}<br />
           Segundo: {Resultado2D12} <br />
           Total {ResultadoD12 + Resultado2D12}</Result>
       </Main>
@@ -160,7 +160,7 @@ margin-left: 1vw;
         <Butaum onClick={Rolar3d12}>
           <Name>Rolar 3d12</Name>
         </Butaum>
-        <Result>Primeiro: {ResultadoD6}<br />
+        <Result>Primeiro: {ResultadoD12}<br />
           Segundo: {Resultado2D12} <br />
           Terceiro : {Resultado3D12}<br />
           Total {ResultadoD12 + Resultado2D12 + Resultado3D12}</Result>

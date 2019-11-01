@@ -19,6 +19,9 @@ align-items: center;
 const Center = styled.div`
 width:33,33%;
 `
+// var myArray = ['alo' , 'opa', 'oi'];
+// var rand = myArray[Math.floor(Math.random() * myArray.length)];
+// console.log(rand)
 export default function index() {
 
   return (
