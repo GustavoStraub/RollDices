@@ -144,7 +144,7 @@ margin-left: 1vw;
         </ADD>
         <Numero>{Quantidade+1}</Numero>
         <Butaum onClick={Rolar2d8}>
-          <Name>Rolar 2d8</Name>
+          <Name>Rolar<br/> 2d8</Name>
         </Butaum>
         <Result>Primeiro: {ResultadoD8}<br />
           Segundo: {Resultado2D8} <br />
@@ -158,7 +158,7 @@ margin-left: 1vw;
         </ADD>
         <Numero>{Quantidade+1}</Numero>
         <Butaum onClick={Rolar3d8}>
-          <Name>Rolar 3d8</Name>
+          <Name>Rolar<br/> 3d8</Name>
         </Butaum>
         <Result>Primeiro: {ResultadoD8}<br />
           Segundo: {Resultado2D8} <br />
@@ -173,7 +173,7 @@ margin-left: 1vw;
         </ADD>
         <Numero>{Quantidade+1}</Numero>
         <Butaum onClick={Rolar4d8}>
-          <Name>Rolar 4d8</Name>
+          <Name>Rolar<br/> 4d8</Name>
         </Butaum>
         <Result>Primeiro: {ResultadoD8}<br />
           Segundo: {Resultado2D8} <br />
