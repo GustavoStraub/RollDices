@@ -5,6 +5,7 @@ import D6 from '../components/D6'
 import D4 from '../components/D4'
 import D8 from '../components/D8'
 import D10 from '../components/D10'
+import D12 from '../components/D12'
 
 const Main = styled.div`
 height: 100%;
@@ -26,11 +27,12 @@ export default function index() {
         <D6 />
         </Center>
         <Center>
-        <D8 />
-        <D4 />
+        <D10 />
+        <D12 />
         </Center>
         <Center>
-          <D10 />
+          <D8 />
+          <D4 />
         </Center>
         <style global jsx>{`
         body {
