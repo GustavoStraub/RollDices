@@ -14,6 +14,7 @@ display: flex;
 align-items: center;
 flex-direction: row;
 justify-content: space-evenly;
+align-items: center;
 `
 const Center = styled.div`
 width:33,33%;
