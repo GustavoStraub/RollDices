@@ -8,13 +8,15 @@ import D10 from '../components/D10'
 import D12 from '../components/D12'
 
 const Main = styled.div`
-height: 100%;
+height: 100vh;
 width: 100%;
 display: flex;
 align-items: center;
 flex-direction: row;
 justify-content: space-evenly;
 align-items: center;
+background: url("../static/RollDices.png");
+background-size: 100% 100%;
 `
 const Center = styled.div`
 width:33,33%;
@@ -42,7 +44,6 @@ export default function index() {
         body {
           margin: 0;
           pading: 0;
-          background: #b5b5b5
         }
       `}</style>
     </Main>
