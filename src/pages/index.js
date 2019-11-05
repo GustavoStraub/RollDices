@@ -7,6 +7,7 @@ import D8 from '../components/D8'
 import D10 from '../components/D10'
 import D12 from '../components/D12'
 
+
 const Main = styled.div`
 height: 100vh;
 width: 100%;
@@ -28,6 +29,9 @@ export default function index() {
 
   return (
     <Main > 
+      <head>
+      <link href="https://fonts.googleapis.com/css?family=UnifrakturCook:700&display=swap" rel="stylesheet"/>
+      </head>
       <Center>
         <D20 />
         <D6 />

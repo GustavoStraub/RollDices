@@ -52,13 +52,13 @@ align-items: center;
 height: 20vh;
 width: 20vw;
 border: 1px solid black;
-background: gray;
+background: #4f4f4f;
 `
 
   const Butaum = styled.div`
 height: 100%;
 width: 25%;
-background: gray;
+background: #4f4f4f;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -66,29 +66,32 @@ border: 1px solid black;
   :hover {
     cursor: pointer;
     transform: scale(1.1,1.1);
-    border: solid 1px red;
+    border: solid 1px #ce1c22;
   }
 `
   const Name = styled.p`
 color: #fff;
 text-align: center;
+font-family: 'UnifrakturCook', cursive;
 `
   const Result = styled.p`
 font-size: 20px;
 margin-left: 1vw;
 color: #fff;
+font-family: 'UnifrakturCook', cursive;
 `
   const SomarDiminuir = styled.div`
 height: 50%;
 width: 100%;
-background: gray;
+background: #4f4f4f;
 display: flex;
 justify-content: center;
 align-items: center;
+font-family: cursive;
 :hover {
   cursor: pointer;
   transform: scale(1.1,1.1);
-  border: solid 1px red;
+  border: solid 1px #ce1c22;
 }
 p{
   color: #fff;
@@ -117,6 +120,7 @@ color: #fff;
 width: 10%;
 height: 100%;
 border-left: 1px solid black;
+font-family: 'UnifrakturCook', cursive;
 `
 const Wrapper = styled.div`
 margin-left: 1vw;
