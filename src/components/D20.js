@@ -8,7 +8,6 @@ export default function D20() {
 
   //DEFININDO VALOR INICIAL DOS DADOS
   const [ResultadoD20, setResultadoD20] = useState(0)
-
   const [Resultado2D20, setResultado2D20] = useState(0)
   const [Resultado3D20, setResultado3D20] = useState(0)
   const [Resultado4D20, setResultado4D20] = useState(0)
@@ -53,6 +52,11 @@ height: 20vh;
 width: 20vw;
 border: 1px solid black;
 background: #4f4f4f;
+@media only screen and (max-width: 768px){
+  width: 30vh;
+  margin-top: 20vh;
+}
+
 `
 
   const Butaum = styled.div`
@@ -132,7 +136,7 @@ margin-left: 1vw;
       case 0: return <Main>
         <ADD>
           <SomarDiminuir onClick={() =>  setQuantidade(Quantidade + 1)}><p>+</p></SomarDiminuir>
-          <SomarDiminuir onClick={() => Quantidade=== 0 ? setQuantidade(Quantidade + 0) : setQuantidade(Quantidade - 1)}><p>-</p></SomarDiminuir>
+          <SomarDiminuir onClick={() => Quantidade === 0 ? setQuantidade(Quantidade + 0) : setQuantidade(Quantidade - 1)}><p>-</p></SomarDiminuir>
         </ADD>
         <Numero>{Quantidade +1}</Numero>
         <Butaum onClick={Rolard20}>

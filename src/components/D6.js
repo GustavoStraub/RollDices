@@ -54,6 +54,9 @@ width: 20vw;
 border: 1px solid black;
 background: #4f4f4f;
 font-family: 'UnifrakturCook', cursive;
+@media only screen and (max-width: 768px){
+  width: 30vh;
+}
 `
 
   const Butaum = styled.div`

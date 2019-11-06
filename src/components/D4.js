@@ -54,6 +54,10 @@ width: 20vw;
 border: 1px solid black;
 background: #4f4f4f;
 font-family: 'UnifrakturCook', cursive;
+@media only screen and (max-width: 768px){
+  width: 30vh;
+  margin-bottom: 20vh;
+}
 `
 
   const Butaum = styled.div`
@@ -86,7 +90,7 @@ background: #4f4f4f;
 display: flex;
 justify-content: center;
 align-items: center;
-font-family: cursive;
+font-family: 'UnifrakturCook', cursive;
 :hover {
   cursor: pointer;
   transform: scale(1.1,1.1);
