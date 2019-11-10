@@ -82,6 +82,9 @@ text-align: center;
 font-size: 20px;
 margin-left: 1vw;
 color: #fff;
+@media only screen and (max-width: 768px){
+  font-size: 16px;
+}
 `
   const SomarDiminuir = styled.div`
 height: 50%;
@@ -114,6 +117,7 @@ height: 100%;
 width: 10%;
 display: flex;
 flex-direction: column;
+
 `
   const Numero = styled.div`
 display: flex;

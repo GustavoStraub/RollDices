@@ -54,7 +54,7 @@ border: 1px solid black;
 background: #4f4f4f;
 @media only screen and (max-width: 768px){
   width: 30vh;
-  margin-top: 20vh;
+
 }
 
 `
@@ -83,6 +83,9 @@ font-size: 20px;
 margin-left: 1vw;
 color: #fff;
 font-family: 'UnifrakturCook', cursive;
+@media only screen and (max-width: 768px){
+  font-size: 16px;
+}
 `
   const SomarDiminuir = styled.div`
 height: 50%;

@@ -23,7 +23,6 @@ justify-content: space-evenly;
 @media only screen and (max-width: 768px){
   flex-direction: column;
 
-
 }
 `
 const LogoWrapper = styled.div`
@@ -51,7 +50,20 @@ img{
 }
 @media only screen and (max-width: 768px){
   img{
-    
+    display: none;
+  }
+}
+`
+const FotoWrapper2 = styled.div`
+img{
+  height: 20vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media only screen and (max-width: 768px){
+  img{
+    display:none;
   }
 }
 `
@@ -93,8 +105,11 @@ export default function index() {
       `}</style>
     </Main>
     <FotoWrapper1>
-      <img src='../static/cantocortato1.png'></img>
+      <img src='../static/cantocortado1.png'></img>
     </FotoWrapper1>
+    <FotoWrapper2>
+    <img src='../static/cantocortado.png'></img>
+    </FotoWrapper2>
     </Wrapper>
   )
 }
